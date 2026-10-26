@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Marca que o JS está ativo (o CSS usa .js para animar a revelação sem esconder conteúdo sem JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ===================== SEO ===================== -->
+  <title>Clínica Veterinária Dr. Gustavo Caldas | Há 10 anos cuidando de quem você ama — Assu/RN</title>
+  <meta name="description" content="Clínica veterinária em Assu (RN) com 10 anos de experiência: consultas, vacinas, exames, cirurgias, limpeza de tártaro e emergência 24h. Agende pelo WhatsApp." />
+  <meta name="keywords" content="veterinário Assu, clínica veterinária Assu RN, Dr. Gustavo Caldas, vacinação pet, emergência veterinária 24h, castração, limpeza de tártaro" />
+  <meta name="author" content="Clínica Veterinária Dr. Gustavo Caldas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2E7D32" />
+
+  <!-- Open Graph (compartilhamento em redes sociais) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clínica Veterinária Dr. Gustavo Caldas | Assu/RN" />
+  <meta property="og:description" content="Há 10 anos cuidando de quem você ama. Atendimento veterinário completo em Assu e região. Agende pelo WhatsApp." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clínica Veterinária Dr. Gustavo Caldas | Assu/RN" />
+  <meta name="twitter:description" content="Há 10 anos cuidando de quem você ama. Atendimento veterinário completo em Assu e região." />
+
+  <!-- Favicon (pata em SVG embutido — sem arquivo externo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%232E7D32'%3E%3Cpath d='M12 13.5c-2.6 0-5.5 2.1-5.5 4.4 0 1.5 1.1 2.6 2.6 2.6 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.5 0 2.6-1.1 2.6-2.6 0-2.3-2.9-4.4-5.5-4.4z'/%3E%3Ccircle cx='5.2' cy='10.6' r='1.9'/%3E%3Ccircle cx='9' cy='7.2' r='2'/%3E%3Ccircle cx='15' cy='7.2' r='2'/%3E%3Ccircle cx='18.8' cy='10.6' r='1.9'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Dados estruturados (Google Pesquisa local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Clínica Veterinária Dr. Gustavo Caldas",
+    "description": "Clínica veterinária completa em Assu/RN. Consultas, vacinação, exames, cirurgias, limpeza de tártaro e emergência 24h.",
+    "telephone": "+55 84 99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Aurélio Lobo, 1064, Centro",
+      "addressLocality": "Assu",
+      "addressRegion": "RN",
+      "postalCode": "59650-000",
+      "addressCountry": "BR"
+    },
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-12:00"],
+    "sameAs": ["https://www.instagram.com/clinicagustavocaldas"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Link de acessibilidade para pular direto ao conteúdo -->
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       SPRITE DE ÍCONES SVG (reutilizados via <use>)
+       ============================================================ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <!-- Pata -->
+    <symbol id="icon-pata" viewBox="0 0 24 24">
+      <g fill="currentColor">
+        <path d="M12 13.5c-2.6 0-5.5 2.1-5.5 4.4 0 1.5 1.1 2.6 2.6 2.6 1 0 1.9-.5 2.9-.5s1.9.5 2.9.5c1.5 0 2.6-1.1 2.6-2.6 0-2.3-2.9-4.4-5.5-4.4z"/>
+        <circle cx="5.2" cy="10.6" r="1.9"/><circle cx="9" cy="7.2" r="2"/>
+        <circle cx="15" cy="7.2" r="2"/><circle cx="18.8" cy="10.6" r="1.9"/>
+      </g>
+    </symbol>
+    <!-- WhatsApp (glifo oficial) -->
+    <symbol id="icon-whats" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+    <!-- Instagram -->
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </g>
+    </symbol>
+    <!-- Facebook -->
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <!-- Telefone -->
+    <symbol id="icon-telefone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <!-- Pin de mapa -->
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </g>
+    </symbol>
+    <!-- Relógio -->
+    <symbol id="icon-relogio" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+      </g>
+    </symbol>
+    <!-- Coração -->
+    <symbol id="icon-coracao" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </symbol>
+    <!-- Medalha / prêmio (10 anos) -->
+    <symbol id="icon-medalha" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="6"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+      </g>
+    </symbol>
+    <!-- Escudo com check -->
+    <symbol id="icon-escudo" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>
+      </g>
+    </symbol>
+    <!-- Equipe (usuários) -->
+    <symbol id="icon-equipe" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </g>
+    </symbol>
+    <!-- Raio (emergência) -->
+    <symbol id="icon-raio" viewBox="0 0 24 24">
+      <polygon fill="currentColor" points="13 2 4 14 11 14 10 22 20 9 13 9 13 2"/>
+    </symbol>
+    <!-- Estetoscópio (consultas) -->
+    <symbol id="icon-estetoscopio" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3v5a5 5 0 0 0 10 0V3"/>
+        <path d="M4 3h2"/><path d="M14 3h2"/>
+        <path d="M10 13v4a4 4 0 0 0 8 0v-3"/>
+        <circle cx="18" cy="13" r="2.5"/>
+      </g>
+    </symbol>
+    <!-- Seringa/vacina -> escudo+vira de vacinação; aqui: frasco de vacina -->
+    <symbol id="icon-vacina" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8" y="7" width="8" height="14" rx="2"/>
+        <path d="M10 7V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/>
+        <path d="M11 12h2"/><path d="M11 16h2"/>
+      </g>
+    </symbol>
+    <!-- Béquerc (exames) -->
+    <symbol id="icon-exame" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 2v6L4.5 18a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8V2"/>
+        <line x1="8.5" y1="2" x2="15.5" y2="2"/>
+        <line x1="7.5" y1="14" x2="16.5" y2="14"/>
+      </g>
+    </symbol>
+    <!-- Maleta de cirurgia / primeiros socorros -->
+    <symbol id="icon-cirurgia" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="3"/>
+        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+        <line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>
+      </g>
+    </symbol>
+    <!-- Dente (limpeza de tártaro) -->
+    <symbol id="icon-dente" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2C8 2 5 4.5 5 8c0 2 .8 3.5 1.5 5.5S8 21 9.5 21s1.5-2 2.5-4c1 2 1 4 2.5 4S16.5 15 17.5 13.5 19 10 19 8c0-3.5-3-6-7-6z"/>
+    </symbol>
+    <!-- Check -->
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <polyline fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="20 6 9 17 4 12"/>
+    </symbol>
+    <!-- Setas -->
+    <symbol id="icon-seta-esq" viewBox="0 0 24 24">
+      <polyline fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="15 18 9 12 15 6"/>
+    </symbol>
+    <symbol id="icon-seta-dir" viewBox="0 0 24 24">
+      <polyline fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="9 18 15 12 9 6"/>
+    </symbol>
+    <!-- Fechar (X) -->
+    <symbol id="icon-fechar" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </g>
+    </symbol>
+    <!-- Menu (hambúrguer) -->
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ============================================================
+       CABEÇALHO FIXO
+       ============================================================ -->
+  <header class="cabecalho" id="cabecalho">
+    <div class="container cabecalho-inner">
+      <a href="#inicio" class="logo" aria-label="Clínica Dr. Gustavo Caldas — voltar ao início">
+        <span class="logo-icone"><svg aria-hidden="true"><use href="#icon-pata"/></svg></span>
+        <span class="logo-texto">Clínica <strong>Dr. Gustavo Caldas</strong></span>
+      </a>
+
+      <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+        <ul class="navegacao-lista">
+          <li><a href="#inicio" class="link-menu ativo">Início</a></li>
+          <li><a href="#servicos" class="link-menu">Serviços</a></li>
+          <li><a href="#sobre" class="link-menu">Sobre</a></li>
+          <li><a href="#equipe" class="link-menu">Equipe</a></li>
+          <li><a href="#contato" class="link-menu">Contato</a></li>
+          <li class="navegacao-cta">
+            <a class="botao botao-whats" href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#icon-whats"/></svg> Agendar consulta
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="botao botao-whats cabecalho-cta" href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#icon-whats"/></svg> Agendar
+      </a>
+
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">
+        <svg aria-hidden="true"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="inicio">
+      <!-- Patas flutuantes decorativas (animação CSS sutil) -->
+      <div class="hero-patas" aria-hidden="true">
+        <svg class="pata pata-1"><use href="#icon-pata"/></svg>
+        <svg class="pata pata-2"><use href="#icon-pata"/></svg>
+        <svg class="pata pata-3"><use href="#icon-pata"/></svg>
+        <svg class="pata pata-4"><use href="#icon-pata"/></svg>
+        <svg class="pata pata-5"><use href="#icon-pata"/></svg>
+        <svg class="pata pata-6"><use href="#icon-pata"/></svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-texto reveal">
+          <span class="selo"><svg aria-hidden="true"><use href="#icon-medalha"/></svg> Há 10 anos em Assu e região</span>
+          <h1>Há 10 anos cuidando de <span class="destaque">quem você ama</span></h1>
+          <p class="hero-sub">Atendimento veterinário completo em Assu e região — com carinho, tecnologia e a confiança de milhares de famílias.</p>
+
+          <div class="hero-acoes">
+            <a class="botao botao-whats botao-grande" href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#icon-whats"/></svg> Agende pelo WhatsApp
+            </a>
+            <a class="botao botao-contorno botao-grande" href="#servicos">Conheça os Serviços</a>
+          </div>
+        </div>
+
+        <div class="hero-imagem reveal atraso-1">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=760&q=80"
+               alt="Médica veterinária examinando um cão com carinho na clínica"
+               width="760" height="950" fetchpriority="high" />
+          <div class="hero-cartao">
+            <span class="hero-cartao-icone"><svg aria-hidden="true"><use href="#icon-raio"/></svg></span>
+            <div>
+              <strong>Emergência 24h</strong>
+              <small>Estamos sempre prontos para o seu pet</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BARRA DE CONFIANÇA
+         ============================================================ -->
+    <section class="barra-confianca" aria-label="Diferenciais da clínica">
+      <div class="container barra-confianca-grid">
+        <div class="confianca-item reveal">
+          <svg aria-hidden="true"><use href="#icon-medalha"/></svg>
+          <div><strong>10 anos</strong><span>de experiência</span></div>
+        </div>
+        <div class="confianca-item reveal atraso-1">
+          <svg aria-hidden="true"><use href="#icon-pata"/></svg>
+          <div><strong>+5.000 pets</strong><span>atendidos</span></div>
+        </div>
+        <div class="confianca-item reveal atraso-2">
+          <svg aria-hidden="true"><use href="#icon-raio"/></svg>
+          <div><strong>Emergência 24h</strong><span>todos os dias</span></div>
+        </div>
+        <div class="confianca-item reveal atraso-3">
+          <svg aria-hidden="true"><use href="#icon-equipe"/></svg>
+          <div><strong>Equipe</strong><span>especializada</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS
+         ============================================================ -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <header class="secao-cabecalho reveal">
+          <span class="secao-etiqueta">Nossos serviços</span>
+          <h2>Tudo o que seu pet precisa, em um só lugar</h2>
+          <p>Do check-up de rotina aos procedimentos mais complexos, com estrutura moderna e uma equipe que trata seu pet como família.</p>
+        </header>
+
+        <div class="servicos-grid">
+          <article class="servico-card reveal">
+            <span class="servico-icone"><svg aria-hidden="true"><use href="#icon-estetoscopio"/></svg></span>
+            <h3>Consultas</h3>
+            <p>Clínica geral e check-up completo, com escuta atenta e diagnóstico preciso.</p>
+            <button class="servico-link" data-abrir-modal="consultas">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+
+          <article class="servico-card reveal atraso-1">
+            <span class="servico-icone"><svg aria-hidden="true"><use href="#icon-vacina"/></svg></span>
+            <h3>Vacinação</h3>
+            <p>Vacinas V8, V10, antirrábica e felinas, com carteirinha e lembretes.</p>
+            <button class="servico-link" data-abrir-modal="vacinacao">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+
+          <article class="servico-card reveal atraso-2">
+            <span class="servico-icone"><svg aria-hidden="true"><use href="#icon-exame"/></svg></span>
+            <h3>Exames</h3>
+            <p>Laboratório próprio: hemograma, bioquímica, raio-x, ultrassom e mais.</p>
+            <button class="servico-link" data-abrir-modal="exames">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-icone"><svg aria-hidden="true"><use href="#icon-cirurgia"/></svg></span>
+            <h3>Cirurgias</h3>
+            <p>Centro cirúrgico equipado, anestesia segura e pós-operatório acompanhado.</p>
+            <button class="servico-link" data-abrir-modal="cirurgias">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+
+          <article class="servico-card reveal atraso-1">
+            <span class="servico-icone"><svg aria-hidden="true"><use href="#icon-dente"/></svg></span>
+            <h3>Limpeza de Tártaro</h3>
+            <p>Remoção de tártaro com ultrassom, para uma boca saudável e hálito fresco.</p>
+            <button class="servico-link" data-abrir-modal="limpeza-tartaro">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+
+          <article class="servico-card reveal atraso-2">
+            <span class="servico-icone servico-icone-alerta"><svg aria-hidden="true"><use href="#icon-raio"/></svg></span>
+            <h3>Emergência</h3>
+            <p>Atendimento urgente 24 horas, todos os dias — é só chamar no WhatsApp.</p>
+            <button class="servico-link" data-abrir-modal="emergencia">Saiba mais <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE
+         ============================================================ -->
+    <section class="secao secao-sobre" id="sobre">
+      <div class="container sobre-grid">
+        <figure class="sobre-foto reveal">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=640&q=80"
+               alt="Dr. Gustavo Caldas, médico veterinário, em sua clínica"
+               width="640" height="760" loading="lazy" decoding="async" />
+          <figcaption class="sobre-distintivo">
+            <strong>10 anos</strong>
+            <span>de histórias e cuidado</span>
+          </figcaption>
+        </figure>
+
+        <div class="sobre-texto reveal atraso-1">
+          <span class="secao-etiqueta">Sobre a clínica</span>
+          <h2>Uma clínica nascida do amor pelos animais de Assu</h2>
+          <p>Há 10 anos, o <strong>Dr. Gustavo Caldas</strong> transformou um sonho em referência no atendimento veterinário do Vale do Açu. O que começou com um consultório acolhedor, hoje é uma clínica completa — mas o essencial nunca mudou: <strong>tratar cada pet como se fosse nosso</strong>.</p>
+          <p>Nossa missão é simples: oferecer medicina veterinária de qualidade, com honestidade, acolhimento e proximidade da família. Porque atrás de cada pet existe uma história de amor — e nós temos o privilégio de cuidar dela.</p>
+
+          <div class="estatisticas" id="estatisticas">
+            <div class="estatistica">
+              <span class="estatistica-valor"><span class="contador" data-alvo="10">0</span></span>
+              <span class="estatistica-rotulo">anos de clínica</span>
+            </div>
+            <div class="estatistica">
+              <span class="estatistica-valor">+<span class="contador" data-alvo="5000">0</span></span>
+              <span class="estatistica-rotulo">pets atendidos</span>
+            </div>
+            <div class="estatistica">
+              <span class="estatistica-valor"><span class="contador" data-alvo="3">0</span></span>
+              <span class="estatistica-rotulo">profissionais na equipe</span>
+            </div>
+          </div>
+
+          <a class="botao botao-verde" href="#equipe">Conheça nossa equipe <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EQUIPE
+         ============================================================ -->
+    <section class="secao secao-equipe" id="equipe">
+      <div class="container">
+        <header class="secao-cabecalho reveal">
+          <span class="secao-etiqueta">Nossa equipe</span>
+          <h2>Quem cuida do seu pet com carinho</h2>
+          <p>Profissionais experientes, em constante atualização — apaixonados por animais.</p>
+        </header>
+
+        <div class="equipe-grid">
+          <article class="cartao-equipe reveal" tabindex="0">
+            <div class="equipe-foto">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=420&q=80" alt="Dr. Gustavo Caldas, médico veterinário e fundador" width="420" height="480" loading="lazy" decoding="async" />
+              <div class="equipe-overlay">
+                <p>Fundador e clínico geral, com 10 anos de dedicação à saúde dos pets de Assu. Consultas, exames, cirurgias e prevenção — um atendimento completo.</p>
+                <a href="https://www.instagram.com/clinicagustavocaldas" target="_blank" rel="noopener" aria-label="Instagram do Dr. Gustavo"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+              </div>
+            </div>
+            <h3>Dr. Gustavo Caldas</h3>
+            <span>Clínico Geral · Fundador</span>
+          </article>
+
+          <article class="cartao-equipe reveal atraso-1" tabindex="0">
+            <div class="equipe-foto">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=420&q=80" alt="André, recepcionista da clínica" width="420" height="480" loading="lazy" decoding="async" />
+              <div class="equipe-overlay">
+                <p>A primeira voz que você ouve ao chamar. André cuida do agendamento, tira dúvidas e recebe cada tutor e cada pet com simpatia na recepção.</p>
+                <a href="https://www.instagram.com/clinicagustavocaldas" target="_blank" rel="noopener" aria-label="Instagram do André"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+              </div>
+            </div>
+            <h3>André</h3>
+            <span>Recepção · Atendimento</span>
+          </article>
+
+          <article class="cartao-equipe reveal atraso-2" tabindex="0">
+            <div class="equipe-foto">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=420&q=80" alt="Zilma, auxiliar veterinária da clínica" width="420" height="480" loading="lazy" decoding="async" />
+              <div class="equipe-overlay">
+                <p>Mãos experientes onde mais precisam: Zilma assiste consultas e procedimentos, administra medicamentos e acompanha cada paciente com dedicação.</p>
+                <a href="https://www.instagram.com/clinicagustavocaldas" target="_blank" rel="noopener" aria-label="Instagram da Zilma"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+              </div>
+            </div>
+            <h3>Zilma</h3>
+            <span>Auxiliar Veterinária</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUIZ INTERATIVO
+         ============================================================ -->
+    <section class="secao secao-quiz" id="quiz">
+      <div class="container">
+        <header class="secao-cabecalho secao-cabecalho-claro reveal">
+          <span class="secao-etiqueta">Teste rápido</span>
+          <h2>Qual o nível de cuidado do seu pet?</h2>
+          <p>Responda 5 perguntas rápidas e descubra se a rotina de saúde do seu melhor amigo está em dia.</p>
+        </header>
+
+        <div class="quiz-caixa reveal atraso-1">
+          <!-- Tela 1: introdução -->
+          <div class="quiz-tela" id="quiz-intro">
+            <span class="quiz-emoji" aria-hidden="true">🐾</span>
+            <h3>Descubra em 1 minuto</h3>
+            <p>Cinco perguntas simples sobre vacinas, alimentação, higiene e rotina. No final, você recebe uma avaliação personalizada — e pode agendar uma consulta com um clique.</p>
+            <button class="botao botao-laranja botao-grande" id="quiz-btn-iniciar">Começar o quiz</button>
+          </div>
+
+          <!-- Tela 2: perguntas -->
+          <div class="quiz-tela" id="quiz-perguntas" hidden>
+            <div class="quiz-progresso">
+              <div class="quiz-barra"><span id="quiz-barra-preenchimento"></span></div>
+              <span class="quiz-contador" id="quiz-contador">1 de 5</span>
+            </div>
+            <h3 id="quiz-pergunta-titulo">Pergunta</h3>
+            <div class="quiz-opcoes" id="quiz-opcoes"><!-- opções geradas via JS --></div>
+          </div>
+
+          <!-- Tela 3: resultado -->
+          <div class="quiz-tela" id="quiz-resultado" hidden>
+            <span class="quiz-emoji" id="quiz-resultado-emoji" aria-hidden="true">🐶</span>
+            <h3 id="quiz-resultado-titulo">Resultado</h3>
+            <p id="quiz-resultado-texto">Texto do resultado</p>
+            <p class="quiz-pontos" id="quiz-resultado-pontos">Você fez X de 10 pontos</p>
+            <a class="botao botao-whats botao-grande" id="quiz-cta" href="#" target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#icon-whats"/></svg> Agendar consulta pelo WhatsApp
+            </a>
+            <button class="quiz-reiniciar" id="quiz-btn-reiniciar">↻ Refazer o quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTATO
+         ============================================================ -->
+    <section class="secao secao-contato" id="contato">
+      <div class="container">
+        <header class="secao-cabecalho reveal">
+          <span class="secao-etiqueta">Contato</span>
+          <h2>Agende o atendimento do seu pet</h2>
+          <p>Chame no WhatsApp ou preencha o formulário — retornamos rapidamente para confirmar seu horário.</p>
+        </header>
+
+        <div class="contato-grid">
+          <div class="contato-info reveal">
+            <ul class="contato-lista">
+              <li>
+                <span class="contato-icone"><svg aria-hidden="true"><use href="#icon-pin"/></svg></span>
+                <div><strong>Endereço</strong><span>Rua Aurélio Lobo, 1064 · Centro<br />Assu – RN · CEP 59650-000</span></div>
+              </li>
+              <li>
+                <span class="contato-icone"><svg aria-hidden="true"><use href="#icon-whats"/></svg></span>
+                <div><strong>WhatsApp / Telefone</strong><a href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener">(84) 99999-9999</a></div>
+              </li>
+              <li>
+                <span class="contato-icone"><svg aria-hidden="true"><use href="#icon-relogio"/></svg></span>
+                <div><strong>Horários</strong><span>Seg a Sex · 8h às 18h<br />Sábado · 8h às 12h · Emergência 24h</span></div>
+              </li>
+              <li>
+                <span class="contato-icone"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></span>
+                <div><strong>Instagram</strong><a href="https://www.instagram.com/clinicagustavocaldas" target="_blank" rel="noopener">@clinicagustavocaldas</a></div>
+              </li>
+            </ul>
+
+            <div class="contato-mapa">
+              <iframe
+                title="Mapa da Clínica Veterinária Dr. Gustavo Caldas em Assu/RN"
+                src="https://www.google.com/maps?q=Rua+Aur%C3%A9lio+Lobo,+1064,+Centro,+Assu+-+RN,+59650-000&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Formulário que monta a mensagem e abre o WhatsApp -->
+          <form class="contato-formulario reveal atraso-1" id="form-contato" novalidate>
+            <h3>Peça seu agendamento</h3>
+            <p class="formulario-dica">Preencha os dados e toque em enviar — a conversa abre prontinha no WhatsApp. 💬</p>
+
+            <div class="campo">
+              <label for="campo-nome">Seu nome *</label>
+              <input type="text" id="campo-nome" name="nome" placeholder="Ex.: Maria Silva" required autocomplete="name" />
+            </div>
+
+            <div class="campo-duo">
+              <div class="campo">
+                <label for="campo-pet">Nome do seu pet *</label>
+                <input type="text" id="campo-pet" name="pet" placeholder="Ex.: Bidu" required />
+              </div>
+              <div class="campo">
+                <label for="campo-especie">Espécie</label>
+                <select id="campo-especie" name="especie">
+                  <option value="Cão">Cão</option>
+                  <option value="Gato">Gato</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="campo-servico">Serviço desejado *</label>
+              <select id="campo-servico" name="servico" required>
+                <option value="">Selecione o serviço</option>
+                <option>Consulta</option>
+                <option>Vacinação</option>
+                <option>Exames</option>
+                <option>Cirurgia</option>
+                <option>Limpeza de Tártaro</option>
+                <option>Emergência</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="campo-mensagem">Mensagem (opcional)</label>
+              <textarea id="campo-mensagem" name="mensagem" rows="3" placeholder="Conte brevemente o que seu pet precisa"></textarea>
+            </div>
+
+            <p class="formulario-erro" id="form-erro" hidden>Preencha os campos obrigatórios (*) para continuar.</p>
+
+            <button type="submit" class="botao botao-whats botao-grande botao-largura">
+              <svg aria-hidden="true"><use href="#icon-whats"/></svg> Enviar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="rodape">
+    <div class="container rodape-grid">
+      <div class="rodape-coluna rodape-marca">
+        <a href="#inicio" class="logo logo-claro">
+          <span class="logo-icone"><svg aria-hidden="true"><use href="#icon-pata"/></svg></span>
+          <span class="logo-texto">Clínica <strong>Dr. Gustavo Caldas</strong></span>
+        </a>
+        <p>Há 10 anos cuidando de quem você ama — medicina veterinária completa, com carinho e confiança, em Assu e região.</p>
+        <div class="rodape-sociais">
+          <a href="https://www.instagram.com/clinicagustavocaldas" target="_blank" rel="noopener" aria-label="Instagram da clínica"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+          <a href="#" aria-label="Facebook da clínica (em breve)"><svg aria-hidden="true"><use href="#icon-facebook"/></svg></a>
+          <a href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener" aria-label="WhatsApp da clínica"><svg aria-hidden="true"><use href="#icon-whats"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="rodape-coluna" aria-label="Links rápidos">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="rodape-coluna">
+        <h4>Contato</h4>
+        <ul class="rodape-contato">
+          <li><svg aria-hidden="true"><use href="#icon-pin"/></svg> Rua Aurélio Lobo, 1064 · Centro · Assu/RN · CEP 59650-000</li>
+          <li><svg aria-hidden="true"><use href="#icon-telefone"/></svg> (84) 99999-9999</li>
+          <li><svg aria-hidden="true"><use href="#icon-relogio"/></svg> Seg–Sex 8h–18h · Sáb 8h–12h · Emergência 24h</li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna rodape-mapa">
+        <h4>Onde estamos</h4>
+        <iframe
+          title="Mini-mapa da localização da clínica"
+          src="https://www.google.com/maps?q=Rua+Aur%C3%A9lio+Lobo,+1064,+Centro,+Assu+-+RN,+59650-000&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <div class="container rodape-base-inner">
+        <p>© <span id="ano-atual">2026</span> Clínica Veterinária Dr. Gustavo Caldas · CNPJ 00.000.000/0001-00 <span class="rodape-marca-agua">(placeholder)</span></p>
+        <p>Feito com <svg class="coracao" aria-hidden="true"><use href="#icon-coracao"/></svg> em Assu/RN</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       ELEMENTOS FLUTUANTES
+       ============================================================ -->
+  <a class="whats-flutuante" href="https://wa.me/5584999935303?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20pet." target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+    <span class="whats-flutuante-icone"><svg aria-hidden="true"><use href="#icon-whats"/></svg></span>
+    <span class="whats-flutuante-texto">Fale conosco</span>
+  </a>
+
+  <button class="voltar-topo" id="voltar-topo" aria-label="Voltar ao topo" hidden>
+    <svg aria-hidden="true"><use href="#icon-seta-dir"/></svg>
+  </button>
+
+  <!-- ============================================================
+       MODAL DE SERVIÇOS (conteúdo preenchido via JS)
+       ============================================================ -->
+  <div class="modal" id="modal-servico" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+    <div class="modal-fundo" data-fechar-modal></div>
+    <div class="modal-caixa" role="document">
+      <button class="modal-fechar" data-fechar-modal aria-label="Fechar detalhes do serviço">
+        <svg aria-hidden="true"><use href="#icon-fechar"/></svg>
+      </button>
+      <span class="modal-icone"><svg aria-hidden="true"><use href="#icon-estetoscopio" id="modal-icone-use"/></svg></span>
+      <h3 id="modal-titulo">Serviço</h3>
+      <p id="modal-descricao">Descrição</p>
+      <ul id="modal-itens"><!-- lista de destaques via JS --></ul>
+      <a class="botao botao-whats botao-largura" id="modal-cta" href="#" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#icon-whats"/></svg> Agendar este serviço
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
